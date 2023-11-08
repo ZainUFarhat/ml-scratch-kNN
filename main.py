@@ -68,6 +68,7 @@ def main_iris():
     print('---------------------------------------------------Testing----------------------------------------------------')    
     print('kNN Accuracy = {:.2f}%'.format(acc))
     print('---------------------------------------------------Plotting---------------------------------------------------')
+    print('Note: plotting will take some time, so please be patient')
     print('Plotting Iris Sepals...')
     # Iris Sepals
     X_train_sepals = X_train[:, [0, 1]]
