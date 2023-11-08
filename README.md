@@ -14,30 +14,31 @@ Iris dataset contains four features - Sepals Length and Width, and Petals Length
 
 It makes sense to plot the lengths and widths of the sepals and petals against each other.
 
-- Sepal Visualization:
+**-** Sepal Visualization:
 
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_sepal.png?raw=true)
 
-- Petal Visualization:
+**-** Petal Visualization:
 
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_petal.png?raw=true)
 
 ### **Walkthrough**
 
-1. Need the following packages installed: torch, sklearn, numpy, collections, and matplotlib.
+**1.** Need the following packages installed: torch, sklearn, numpy, collections, and matplotlib.
 
-2. Once you made sure all these libraries are installed, eevrything is simple, just head to main.py and execute it.
+**2.** Once you made sure all these libraries are installed, eevrything is simple, just head to main.py and execute it.
 
-3. Since code is modular, main.py can easily: 
-    i. Load the iris dataset \
-    ii. Split data into train and test sets \
-    iii. Build a kNN classifier \
-    iv. Fit the kNN classifer \
-    v. Predict on the test set \
-    vi. Plot the final decision boundary predictions \
-    vii. I have filled this file with print statements descriptive on what is currently running. Do note that plotting the decision boundaries can take some time, so be patient!
+**3.** Since code is modular, main.py can easily: \
+    **i.** Load the iris dataset \
+    **ii.** Split data into train and test sets \
+    **iii.** Build a kNN classifier \
+    **iv.** Fit the kNN classifer \
+    **v.** Predict on the test set \
+    **vi.** Plot the final decision boundary predictions \
+    **vii.** I have filled this file with print statements descriptive on what is currently running. Do note that plotting the decision boundaries can take some time, so be patient!
 
-4. In main.py I specify a set of hyperparameters, these can be picked by the user. The main ones worth noting are number of neighbors (k) and the metric used (I provide metrics for euclidean, manhattan, minkowski, and cosine).
+
+**4.** In main.py I specify a set of hyperparameters, these can be picked by the user. The main ones worth noting are number of neighbors (k) and the metric used (I provide metrics for euclidean, manhattan, minkowski, and cosine).
 
 ### **Results**
 
@@ -49,11 +50,11 @@ Of course because of the high dimensionality, we must reduce our training space 
 
 We will follow the same steps as above:
 
-- Sepal Decision Boundary:
+**-** Sepal Decision Boundary:
 
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_decision_boundaries_petal.png?raw=true)
 
-- Petal Decision Boundary
+**-** Petal Decision Boundary
 
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_decision_boundaries_sepal.png?raw=true)
 
