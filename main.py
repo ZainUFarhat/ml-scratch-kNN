@@ -10,6 +10,9 @@ from distances import *
 # utils
 from utils import *
 
+# set numpy random seed
+np.random.seed(42)
+
 def main_iris():
 
     """
@@ -59,7 +62,7 @@ def main_iris():
     kNN.fit(X = X_train, y = y_train)
     # predict on test
     predictions = kNN.predict(X_test)
-    predictions = torch.tensor(predictions)
+    predictions = predictions
 
     acc = accuracy_fn(y_true = y_test, y_pred = predictions)
 
@@ -68,7 +71,7 @@ def main_iris():
     print('---------------------------------------------------Testing----------------------------------------------------')    
     print('kNN Accuracy = {:.2f}%'.format(acc))
     print('---------------------------------------------------Plotting---------------------------------------------------')
-    print('Note: plotting will take some time, so please be patient')
+    print('\nNote: plotting will take some time, so please be patient\n')
     print('Plotting Iris Sepals...')
     # Iris Sepals
     X_train_sepals = X_train[:, [0, 1]]

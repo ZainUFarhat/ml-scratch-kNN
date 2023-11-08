@@ -1,6 +1,3 @@
-# torch
-import torch
-
 # sklearn
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
@@ -49,12 +46,12 @@ class Iris():
         iris = datasets.load_iris()
 
         # feature data
-        sepal_lengths, sepal_widths = torch.tensor(iris.data[:, 0]), torch.tensor(iris.data[:, 1])
-        petal_lengths, petal_widths = torch.tensor(iris.data[:, 2]), torch.tensor(iris.data[:, 3])
+        sepal_lengths, sepal_widths = iris.data[:, 0], iris.data[:, 1]
+        petal_lengths, petal_widths = iris.data[:, 2], iris.data[:, 3]
         # targets
         targets = iris.target_names
         # corresponding color (which is also their name)
-        colors = torch.tensor(iris.target)
+        colors = iris.target
         # the string title of sepal length and width features
         sepal_length_name, sepal_width_name = iris.feature_names[0], iris.feature_names[1]
         petal_length_name, petal_width_name = iris.feature_names[2], iris.feature_names[3]
@@ -133,4 +130,4 @@ class Iris():
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = self.test_size, random_state = self.random_state)
 
         # return
-        return torch.tensor(X_train), torch.tensor(X_test), torch.tensor(y_train), torch.tensor(y_test)
+        return X_train, X_test, y_train, y_test

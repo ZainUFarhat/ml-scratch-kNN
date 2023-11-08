@@ -102,7 +102,7 @@ class kNNClassifier():
             distances = [self.distance.cosine_distance(x, x_train) for x_train in self.X_train]
 
         # get the closest k indices
-        k_idx = torch.argsort(torch.tensor(distances))[:self.k]
+        k_idx = np.argsort(distances)[:self.k]
         # get closest k labels
         k_labels = [self.y_train[i] for i in k_idx]
 

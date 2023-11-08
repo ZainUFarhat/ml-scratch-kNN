@@ -1,5 +1,6 @@
-# torch
-import torch
+# numpy
+import numpy as np
+from numpy.linalg import norm
 
 class Distnace():
 
@@ -36,7 +37,7 @@ class Distnace():
         """
 
         # compute the euclidean distance
-        euclidean = torch.sqrt(torch.sum((x1 - x2) ** 2))
+        euclidean = np.sqrt(np.sum((x1 - x2) ** 2))
 
         # return
         return euclidean
@@ -57,7 +58,7 @@ class Distnace():
         """
 
         # compute the manhattan distance
-        manhattan = torch.sum(torch.abs(x1 - x2))
+        manhattan = np.sum(np.abs(x1 - x2))
 
         # return
         return manhattan
@@ -79,7 +80,7 @@ class Distnace():
         """
 
         # compute the euclidean distance
-        minkowski = torch.sqrt(torch.sum(x1 - x2) ** p)
+        minkowski = np.sqrt(np.sum(x1 - x2) ** p)
 
         # return
         return minkowski
@@ -100,7 +101,7 @@ class Distnace():
         """
 
         # compute the cosine similarity score
-        cosine_similarity = torch.dot(x1, x2)/(torch.norm(x1) * torch.norm(x2))
+        cosine_similarity = np.dot(x1, x2)/(norm(x1) * norm(x2))
 
         # compute the cosine distance
         cosine_distance = 1 - cosine_similarity

@@ -1,6 +1,3 @@
-# torch
-import torch
-
 # numpy
 import numpy as np
 
@@ -27,7 +24,7 @@ def accuracy_fn(y_true, y_pred):
   """
   
   # find the number of correct predictions  
-  correct = torch.eq(y_true, y_pred).sum().item()
+  correct = np.equal(y_true, y_pred).sum().item()
   # calculate the accuracy
   acc = (correct/len(y_pred))*100
   # return the accuracy
@@ -65,10 +62,10 @@ def visualize_decision_boundaries_iris(X_train_reduced, y_train, metric, resolut
 
     # we will create a meshgrid based on the x-axis and y-axis range
     # we will take resolution steps between min and max and we are aiming to classify all of these into our given labels
-    xx, yy = np.meshgrid(np.arange(x_min.cpu(), x_max.cpu(), resolution), np.arange(y_min.cpu(), y_max.cpu(), resolution))
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, resolution), np.arange(y_min, y_max, resolution))
 
     # predict the labels for all points on the created meshgrid
-    predictions = knn.predict(torch.tensor(np.c_[xx.ravel(), yy.ravel()]))
+    predictions = knn.predict(np.c_[xx.ravel(), yy.ravel()])
     Z = np.array(predictions)
 
     # reshape so we can graph

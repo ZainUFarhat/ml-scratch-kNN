@@ -24,7 +24,7 @@ It makes sense to plot the lengths and widths of the sepals and petals against e
 
 ### **Walkthrough**
 
-**1.** Need the following packages installed: torch, sklearn, numpy, collections, and matplotlib.
+**1.** Need the following packages installed: sklearn, numpy, collections, and matplotlib.
 
 **2.** Once you made sure all these libraries are installed, eevrything is simple, just head to main.py and execute it.
 
