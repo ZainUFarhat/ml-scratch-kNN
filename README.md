@@ -1,10 +1,10 @@
-# ml-scratch-kNN
+# **ml-scratch-kNN**
 k Nearest Neighbor Algorithm
 
-## Description
+## **Description**
 The following is my from scratch implementation of the k Nearest Neighbor algorithm.
     
-### Dataset
+### **Dataset**
 
 For datasets I used the popular sklearn Iris Dataset.
 
@@ -22,7 +22,7 @@ It makes sense to plot the lengths and widths of the sepals and petals against e
 
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_petal.png?raw=true)
 
-### Walkthrough
+### **Walkthrough**
 
 1. Need the following packages installed: torch, sklearn, numpy, collections, and matplotlib.
 
@@ -39,7 +39,7 @@ It makes sense to plot the lengths and widths of the sepals and petals against e
 
 4. In main.py I specify a set of hyperparameters, these can be picked by the user. The main ones worth noting are number of neighbors (k) and the metric used (I provide metrics for euclidean, manhattan, minkowski, and cosine).
 
-### Results
+### **Results**
 
 With hyperparameters k = 5 and metric = 'euclidean'. I was able to achieve 100% accuracy. The results can be shown from the decision boundaries. 
 
