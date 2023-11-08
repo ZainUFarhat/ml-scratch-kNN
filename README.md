@@ -29,12 +29,12 @@ It makes sense to plot the lengths and widths of the sepals and petals against e
 2. Once you made sure all these libraries are installed, eevrything is simple, just head to main.py and execute it.
 
 3. Since code is modular, main.py can easily: 
-    i. Load the iris dataset
-    ii. Split data into train and test sets
-    iii. Build a kNN classifier
-    iv. Fit the kNN classifer
-    v. Predict on the test set
-    vi. Plot the final decision boundary predictions
+    i. Load the iris dataset \
+    ii. Split data into train and test sets \
+    iii. Build a kNN classifier \
+    iv. Fit the kNN classifer \
+    v. Predict on the test set \
+    vi. Plot the final decision boundary predictions \
     vii. I have filled this file with print statements descriptive on what is currently running. Do note that plotting the decision boundaries can take some time, so be patient!
 
 4. In main.py I specify a set of hyperparameters, these can be picked by the user. The main ones worth noting are number of neighbors (k) and the metric used (I provide metrics for euclidean, manhattan, minkowski, and cosine).
