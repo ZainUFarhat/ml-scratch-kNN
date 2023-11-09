@@ -51,11 +51,11 @@ We will follow the same steps as above:
 
 **-** Sepal Decision Boundary:
 
-![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_decision_boundaries_petal.png?raw=true)
+![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_decision_boundaries_sepal.png?raw=true)
 
 **-** Petal Decision Boundary
 
-![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_decision_boundaries_sepal.png?raw=true)
+![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_decision_boundaries_petal.png?raw=true)
 
 As you can see all datapoints were correctly labelled, hence affirming our 100% accuracy.
 
