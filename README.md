@@ -1,8 +1,8 @@
 # **ml-scratch-kNN**
-k Nearest Neighbor Algorithm
+k Nearest Neighbors Algorithm
 
 ## **Description**
-The following is my from scratch implementation of the k Nearest Neighbor algorithm.
+The following is my from scratch implementation of the k Nearest Neighbors algorithm.
     
 ### **Dataset**
 
@@ -45,8 +45,6 @@ With hyperparameters k = 5 and metric = 'euclidean'. I was able to achieve 100% 
 
 **Note**: I preferred to display the results for the standard euclidean metric. However, do feel free to try out different metrics (manhattan, minkowski, cosine) to understand and visualize different results.
 
-Of course because of the high dimensionality, we must reduce our training space in order to visualize decision boundairs.
-
 We will follow the same steps as above:
 
 **-** Sepal Decision Boundary:
@@ -58,5 +56,3 @@ We will follow the same steps as above:
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-kNN/blob/main/plots/iris/iris_decision_boundaries_petal.png?raw=true)
 
 As you can see all datapoints were correctly labelled, hence affirming our 100% accuracy.
-
-Thank you for following my tutorial!
