@@ -59,6 +59,10 @@ class Iris():
         # set figure size
         plt.figure(figsize=(7, 7))
 
+        # set background color to lavender
+        ax = plt.axes()
+        ax.set_facecolor("lavender")
+
         # scatterplot
         sc = plt.scatter(sepal_lengths, sepal_widths, c = colors)
         plt.title('Iris Dataset Scatterplot - Sepal')
@@ -70,6 +74,10 @@ class Iris():
 
         # set figure size
         plt.figure(figsize=(7, 7))
+        
+        # set background color to lavender
+        ax = plt.axes()
+        ax.set_facecolor("lavender")
 
         # scatterplot
         sc = plt.scatter(petal_lengths, petal_widths, c = colors)
